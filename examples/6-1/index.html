@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Example 6-1: Prioirity/Specificity</title>
+	<style>
+		body {
+			background-color: skyblue !important;
+		}
+		body {
+			background-color: orange;
+		}
+		span.vocab {
+			padding: 0.4px;
+			background-color: lightgray;
+			color: black;
+		}
+		a, a:visited {
+			color: blueviolet;
+		}
+		nav {
+			line-height: 3vh;
+		}
+		nav > a:hover {
+			background-color: palevioletred;
+			padding: 2px 4px;
+			text-decoration: underline;
+			border-right: solid 2px skyblue;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href = "#"> + </a><a href = "index.html"> Home </a>
+		<a href="index.html"> Analysis </a>
+	</nav>
+	<p>This is the first paragraph.</p>
+	<section>
+		This is a section.
+		<p>This is a second paragraph inside a section.</p>
+	</section>
+</body>
+</html>
