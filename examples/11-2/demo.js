@@ -10,7 +10,4 @@ window.onload = function() {
 	let specialPs = $('body > p.class');
 	console.log(specialPs);
 
-	//jQuery, eq() = equal or equivalent
-	let psJQ = $('body > p');
-	console.log(psJQ.eq(-1));
 };

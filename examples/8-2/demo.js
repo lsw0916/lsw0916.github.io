@@ -37,4 +37,4 @@ profile = {
 	}
 };
 
-console.log(profile.contact.home);
+console.log(profile.contasct.home);

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang = "en-us">
+	<head>
+		<title>Example 12-5: Interactive Animation with jQuery</title>
+		<meta charset = "UTF-8">
+		<script type = "text/javascript" src = "../js/jquery-3.6.0.min.js"></script>
+		<script>
+			window.onload = function() {
+				$('button').eq(0).on('click', function() {
+					/* addClass: 幫所有div套用animated這個名稱 */
+					$('div').addClass('animated');
+					/* removeClass('animated') */
+				});
+
+				$('button').eq(1).on('click', function() {
+					/* addClass: 幫所有div套用animated這個名稱 */
+					$('div').removeClass('animated');
+					/* removeClass('animated') */
+				});
+			};
+		</script>
+		<style>
+			div {
+				width: 100px;
+				height: 100px;
+			}
+
+			div.animated {
+				animation: bgChange 1s linear infinite alternate;
+			}
+
+			/* @keyframes */
+			@keyframes bgChange {
+				0% { /*from */
+					background-color: pink;
+				}
+
+				50% {
+					background-color: crimson;
+				}
+
+				100% { /*to*/
+					background-color: azure;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<button>Animate!</button>
+		<button>Stop!</button>
+	</body>
+</html>

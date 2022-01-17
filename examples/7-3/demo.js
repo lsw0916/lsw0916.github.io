@@ -21,4 +21,4 @@ var x=20; y=90; z=100;
 // var x=30; // potential error
 
 x = 25;
-console.log(x);
+//console.log(x);
